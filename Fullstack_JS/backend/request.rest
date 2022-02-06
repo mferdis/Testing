@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Malik",
+    "email": "malik@gmail.com",
+    "password": "123456",
+    "confpassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "malik@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+GET http://localhost:5000/logout
